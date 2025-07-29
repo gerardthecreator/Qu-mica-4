@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solución Pregunta #5</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Roboto+Slab:wght@300;400;700&display=swap" rel="stylesheet">
+    <!-- Configuración y carga de MathJax -->
+    <script>
+        MathJax = {
+          tex: {
+            inlineMath: [['$', '$'], ['\\(', '\\)']]
+          }
+        };
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        body { font-family: 'Roboto Slab', serif; background-color: #2c3e50; color: #ecf0f1; padding: 20px; }
+        .container { background-color: #34495e; padding: 30px; border-radius: 10px; max-width: 900px; margin: auto; }
+        h1, h2 { font-family: 'Anton', sans-serif; color: #c0392b; }
+        h1 { font-size: 2.8em; text-align: center; border-bottom: 2px solid; padding-bottom: 10px; }
+        h2 { font-size: 2em; margin-top: 30px; }
+        .paso { border-left: 5px solid #c0392b; padding: 15px; margin: 20px 0; background: rgba(0,0,0,0.1); }
+        .conclusion { background: #c0392b; color: #ecf0f1; padding: 20px; text-align: center; font-weight: bold; font-size: 1.3em; border-radius: 5px; }
+        a { color: #3498db; font-weight: bold; }
+        table { width: 100%; border-collapse: collapse; margin-top: 15px; font-size: 1.1em; }
+        th, td { border: 1px solid #ecf0f1; padding: 12px; text-align: center; vertical-align: middle; }
+        th { background-color: #2c3e50; }
+        .decrease { color: #e74c3c; font-weight: bold; }
+        .increase { color: #2ecc71; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Pregunta #5: Equilibrio Químico y Ley de los Gases</h1>
+        
+        <div class="paso">
+            <h3>Análisis del Enunciado</h3>
+            <p>La clave del problema está en esta frase: "la presión disminuyó desde 3 atm hasta 1 atm" mientras la temperatura y el volumen se mantuvieron constantes.</p>
+            <p>El principio fundamental que conecta estas variables es la <strong>Ley del Gas Ideal</strong>: $PV = nRT$.</p>
+            <p>Si la reescribimos como $P = (\frac{n}{V})RT$, y sabemos que V y T son constantes, la ecuación nos muestra una relación directa entre la presión (P) y el número total de moles de gas (n):</p>
+            <p><strong>Si la Presión (P) disminuye, necesariamente el número total de moles de gas (n) también debe disminuir.</strong></p>
+            <p>Por lo tanto, nuestra tarea es encontrar cuál de las reacciones propuestas resulta en una <strong>disminución neta en la cantidad de moles de gas</strong>.</p>
+        </div>
+
+        <h2>Análisis de cada reacción</h2>
+        <div class="paso">
+            <p>Calcularemos el cambio en los moles de gas ($\Delta n_{gas}$) para cada reacción, donde $\Delta n_{gas} = (\text{moles de gas en productos}) - (\text{moles de gas en reactivos})$. Buscamos reacciones donde $\Delta n_{gas}$ sea negativo.</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Reacción</th>
+                        <th>Moles de Gas (Reactivos)</th>
+                        <th>Moles de Gas (Productos)</th>
+                        <th>$\Delta n_{gas}$</th>
+                        <th>Efecto en la Presión</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>$A_2(g) + C_2(s) \rightarrow 2 AC(g)$</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>$2 - 1 = +1$</td>
+                        <td class="increase">Aumenta</td>
+                    </tr>
+                    <tr>
+                        <td>$2 A_2(g) + BC_2(g) \rightarrow 2 A_2B(g) + C_2(s)$</td>
+                        <td>$2 + 1 = 3$</td>
+                        <td>2</td>
+                        <td>$2 - 3 = -1$</td>
+                        <td class="decrease">Disminuye</td>
+                    </tr>
+                    <tr>
+                        <td>$4 AB(g) + CD(g) \rightarrow A_4C(s) + 2 AD_2(g)$</td>
+                        <td>$4 + 1 = 5$</td>
+                        <td>2</td>
+                        <td>$2 - 5 = -3$</td>
+                        <td class="decrease">Disminuye</td>
+                    </tr>
+                    <tr>
+                        <td>$3 ABC(g) \rightarrow AC_3(s) + A_2B_3(s)$</td>
+                        <td>3</td>
+                        <td>0</td>
+                        <td>$0 - 3 = -3$</td>
+                        <td class="decrease">Disminuye</td>
+                    </tr>
+                    <tr>
+                        <td>$2 A_2(g) + 2 B_2(g) \rightarrow 2 A_2B_2(g)$</td>
+                        <td>$2 + 2 = 4$</td>
+                        <td>2</td>
+                        <td>$2 - 4 = -2$</td>
+                        <td class="decrease">Disminuye</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="conclusion">
+            <h3>Conclusión y Explicación</h3>
+            <p>La disminución de la presión a volumen y temperatura constantes indica que la reacción química provocó una reducción en el número total de moléculas en fase gaseosa.</p>
+            <p>Al analizar las opciones, las reacciones <strong>b), c), d) y e)</strong> cumplen con este criterio, ya que en todas ellas hay menos moles de gas en los productos que en los reactivos.</p>
+            <p>Sin más información, no es posible determinar un único ganador. Cualquiera de estas cuatro ecuaciones es consistente con la observación experimental descrita.</p>
+        </div>
+        <br>
+        <a href="index.html">← Volver al Menú</a>
+    </div>
+</body>
+</html>

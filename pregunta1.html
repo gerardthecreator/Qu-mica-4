@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solución Pregunta #1</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Roboto+Slab:wght@300;400;700&display=swap" rel="stylesheet">
+    <script>
+        MathJax = { tex: { inlineMath: [['$', '$']] } };
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        body { font-family: 'Roboto Slab', serif; background-color: #2c3e50; color: #ecf0f1; padding: 20px; }
+        .container { background-color: #34495e; padding: 30px; border-radius: 10px; max-width: 900px; margin: auto; }
+        h1, h2 { font-family: 'Anton', sans-serif; color: #e67e22; }
+        h1 { font-size: 2.8em; text-align: center; border-bottom: 2px solid; padding-bottom: 10px; }
+        h2 { font-size: 2em; margin-top: 30px; }
+        .paso { border-left: 5px solid #e67e22; padding: 15px; margin: 20px 0; background: rgba(0,0,0,0.1); }
+        .conclusion { background: #e67e22; color: #FFF; padding: 20px; text-align: center; font-weight: bold; font-size: 1.3em; border-radius: 5px; }
+        a { color: #3498db; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Pregunta #1: Propiedades Coligativas</h1>
+        
+        <div class="paso">
+            <h3>Análisis Preliminar y Datos Clave</h3>
+            <p>Este problema se centra en las propiedades coligativas, específicamente en el <strong>aumento ebulloscópico</strong>. Estas propiedades dependen de la cantidad de soluto, no de su identidad.</p>
+            <ul>
+                <li>Disolvente: Disulfuro de carbono ($CS_2$)</li>
+                <li>Punto de ebullición normal del $CS_2$ ($T_b^o$): $46.30 \, ^\circ\text{C}$</li>
+                <li>Densidad del $CS_2$: $1.261 \, \text{g/mL}$</li>
+                <li>Volumen del $CS_2$: $50.0 \, \text{mL}$</li>
+                <li>Constante ebulloscópica del $CS_2$ ($K_b$): El valor estándar es $2.37 \, ^\circ\text{C/m}$. (El "1,5p" del enunciado se refiere a los puntos de la pregunta, no al valor de la constante).</li>
+            </ul>
+            <p><strong>Cálculo fundamental (masa del disolvente en kg):</strong></p>
+            <p>Masa de $CS_2 = \text{Volumen} \times \text{Densidad} = 50.0 \, \text{mL} \times 1.261 \, \text{g/mL} = 63.05 \, \text{g}$</p>
+            <p>Masa de $CS_2$ en kg = $63.05 \, \text{g} \div 1000 = 0.06305 \, \text{kg}$</p>
+        </div>
+
+        <h2>a) ¿Cuál es la nueva temperatura de ebullición?</h2>
+        <div class="paso">
+            <h3>Paso 1: Calcular la molalidad (m) de la disolución.</h3>
+            <p>La molalidad es la cantidad de moles de soluto por kilogramo de disolvente.</p>
+            <p>$m = \frac{\text{moles de soluto}}{\text{kg de disolvente}} = \frac{0.250 \, \text{mol}}{0.06305 \, \text{kg}} \approx 4.00 \, \text{m}$ (redondeado para mantener cifras significativas, se usará el valor exacto en el cálculo)</p>
+        </div>
+        <div class="paso">
+            <h3>Paso 2: Calcular el aumento del punto de ebullición ($\Delta T_b$).</h3>
+            <p>Usamos la fórmula del aumento ebulloscópico.</p>
+            <p>$\Delta T_b = K_b \cdot m = (2.37 \, ^\circ\text{C/m}) \cdot (\frac{0.250}{0.06305} \, \text{m}) \approx 9.397 \, ^\circ\text{C}$</p>
+        </div>
+        <div class="paso">
+            <h3>Paso 3: Calcular la nueva temperatura de ebullición ($T_b$).</h3>
+            <p>La nueva temperatura es la original más el aumento.</p>
+            <p>$T_b = T_b^o + \Delta T_b = 46.30 \, ^\circ\text{C} + 9.397 \, ^\circ\text{C} = 55.697 \, ^\circ\text{C}$</p>
+        </div>
+        <div class="conclusion">
+            Respuesta (a): La nueva temperatura de ebullición de la disolución es aproximadamente <strong>55.70 °C</strong>.
+        </div>
+
+        <h2>b) ¿Cuál es el peso molecular del soluto desconocido?</h2>
+        <div class="paso">
+            <h3>Paso 1: Determinar el aumento de ebullición experimental ($\Delta T_b$).</h3>
+            <p>$\Delta T_b = T_{b, \text{solución}} - T_{b, \text{disolvente}}^o = 47.08 \, ^\circ\text{C} - 46.30 \, ^\circ\text{C} = 0.78 \, ^\circ\text{C}$</p>
+        </div>
+        <div class="paso">
+            <h3>Paso 2: Calcular la molalidad (m) de la disolución a partir de $\Delta T_b$.</h3>
+            <p>Reorganizamos la fórmula: $m = \frac{\Delta T_b}{K_b}$</p>
+            <p>$m = \frac{0.78 \, ^\circ\text{C}}{2.37 \, ^\circ\text{C/m}} \approx 0.329 \, \text{m}$</p>
+        </div>
+        <div class="paso">
+            <h3>Paso 3: Calcular los moles de soluto presentes.</h3>
+            <p>moles = molalidad $\times$ kg de disolvente</p>
+            <p>moles = $(0.329 \, \text{mol/kg}) \cdot (0.06305 \, \text{kg}) \approx 0.02074 \, \text{mol}$</p>
+        </div>
+        <div class="paso">
+            <h3>Paso 4: Calcular el peso molecular (Masa Molar, PM).</h3>
+            <p>El peso molecular es la masa en gramos dividida por la cantidad de moles.</p>
+            <p>$PM = \frac{\text{gramos de soluto}}{\text{moles de soluto}} = \frac{5.39 \, \text{g}}{0.02074 \, \text{mol}} \approx 260 \, \text{g/mol}$</p>
+        </div>
+        <div class="conclusion">
+            Respuesta (b): El peso molecular del soluto desconocido es aproximadamente <strong>260 g/mol</strong>.
+        </div>
+        <br>
+        <a href="index.html">← Volver al Menú</a>
+    </div>
+</body>
+</html>
